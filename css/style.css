@@ -1,0 +1,448 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pink: hsl(322, 100%, 66%)
+- Light Pink: hsl(321, 100%, 78%)
+- Light Red: hsl(0, 100%, 63%)
+
+### Neutral
+
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Very Pale Blue: hsl(207, 100%, 98%)
+
+## Typography
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 700
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 600, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/) */
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(207, 100%, 98%);
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  padding: 2rem;
+}
+
+/* Navbar */
+.header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10px;
+  margin-bottom: 7rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: 1px solid hsl(321, 100%, 78%);
+  padding: 5px 10px;
+  background: transparent;
+  text-align: center;
+  color: hsl(321, 100%, 78%);
+  font-size: 0.5rem;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+.navbar img {
+  width: 32%;
+}
+
+/* content */
+.content h1 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.btn.btn-lg {
+  font-size: 0.5rem;
+  display: block;
+  margin: 0 auto;
+  color: hsl(207, 100%, 98%);
+  background: hsl(322, 100%, 66%);
+  padding: 5px 20px;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+/* .firstSection */
+.firstSection {
+  padding: 2rem;
+  text-align: center;
+}
+
+.firstSection img.mockup {
+  max-width: 100%;
+  margin-bottom: 5rem;
+}
+
+.communities ul img.listItem,
+.communities ul img.listItem2 {
+  width: 8%;
+  position: absolute;
+  left: 120px;
+  margin-top: -25px;
+}
+
+.communities span {
+  display: block;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.communities h2 {
+  font-size: 0.6rem;
+  color: #999999;
+  font-weight: 300;
+}
+
+.communities ul li {
+  margin-bottom: 6rem;
+}
+
+/* secondSection */
+.flex {
+  text-align: center;
+  padding: 2rem;
+}
+
+.flexImg {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.flex h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.flex p {
+  font-size: 0.85rem;
+  margin-bottom: 12rem;
+}
+
+.secondSection .flex2 {
+  padding: 5rem;
+}
+
+.secondSection h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn.btn-lg.py {
+  padding: 10px 30px !important;
+  font-size: 1rem !important;
+}
+
+footer {
+  padding: 2rem;
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(207, 100%, 98%);
+}
+
+.top {
+  margin-bottom: 4rem;
+}
+
+.top h2 {
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.top p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.btn.btn-lg.right {
+  position: absolute;
+  right: 30px;
+  border-radius: 3px;
+  padding: 5px 15px;
+}
+
+.bottom {
+  text-align: left;
+}
+
+.bottom img {
+  width: 10%;
+}
+
+.bottom span {
+  color: hsl(207, 100%, 98%);
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.bottom p {
+  margin-top: 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.list1 {
+  margin-top: 2rem;
+}
+
+.list1 img {
+  width: 5%;
+  margin-right: 0.5rem;
+}
+
+.list1 span {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.list1 li {
+  margin-bottom: 0.5rem;
+}
+
+.list2 {
+  margin-top: 2rem;
+}
+
+.list2 li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.list2 i {
+  color: hsl(207, 100%, 98%);
+}
+
+.footerImg {
+  margin-bottom: -1rem;
+}
+
+@media (min-width: 376px) and (max-width: 1440px) {
+  .header {
+    padding: 4rem;
+  }
+
+  .header .navbar {
+    margin-bottom: 12rem;
+  }
+
+  .navbar img {
+    width: 15%;
+  }
+
+  .content h1 {
+    font-size: 3rem;
+  }
+
+  .content p {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem !important;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .btn.btn-lg {
+    padding: 15px 50px;
+    border-radius: 50px;
+    margin-bottom: -2rem;
+  }
+
+  .communities ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .communities ul img.listItem {
+    width: 2%;
+    left: 20rem;
+  }
+
+  .communities ul img.listItem2 {
+    width: 2%;
+    left: 62rem;
+  }
+
+  .flex2 .btn.btn-lg.py {
+    padding: 5px 30px;
+    font-size: 0.5rem;
+  }
+
+
+  .flex {
+    padding: 6rem;
+  }
+
+  .secondSection .flexItem {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20rem;
+  }
+
+  .secondSection .flexItem:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .flexImg {
+    width: 50%;
+  }
+
+  .box {
+    width: 40%;
+    text-align: left;
+  }
+
+  .box h3 {
+    font-size: 2rem;
+  }
+
+  .box p {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 10rem;
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(207, 100%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: row-reverse;
+  }
+
+  .footerImg {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .top,
+  .bottom {
+    width: 30%;
+  }
+
+  .top {
+    padding: 2rem;
+    text-align: left;
+  }
+
+  .top h2 {
+    font-weight: 100 !important;
+  }
+
+  .top p {
+    font-size: 0.76rem;
+    margin-bottom: 2rem !important;
+  }
+
+  input {
+    width: 90%;
+    padding: 0.5rem;
+  }
+
+  .btn.btn-lg.right {
+    margin-top: -42px;
+    margin-right: 4rem;
+    padding: 10px 25px !important;
+  }
+
+  .bottom img {
+    width: 12%;
+  }
+
+  .bottom span {
+    font-size: 2.5rem;
+  }
+
+  .bottom p {
+    font-size: 1rem;
+  }
+
+  .list1 img {
+    width: 4%;
+  }
+
+  .list1 span {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+
+  .list2 {
+    margin-top: 4rem;
+  }
+
+}
